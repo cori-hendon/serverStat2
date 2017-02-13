@@ -7,8 +7,10 @@ yr=$(date +%Y)
 mo=$(date +%B)
 da=$(date +%d)
 pathvar=$yr/$mo/$da/
+filenamevar=qnodes.out.${yr}_${mo}_${da}
+
 mkdir -p $pathvar
-mv qnodes.* $pathvar/.
+mv $filenamevar* $pathvar/
 
 
 
