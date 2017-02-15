@@ -6,7 +6,7 @@
 yr=$(date +%Y)
 mo=$(date +%B)
 da=$(date +%d)
-pathvar=$yr/$mo/$da/
+pathvar=$yr/$mo/$da
 filenamevar=qnodes.out.${yr}_${mo}_${da}
 
 mkdir -p /home/ec2-user/$pathvar
@@ -23,7 +23,7 @@ mv /home/ec2-user/$filenamevar* /home/ec2-user/$pathvar/.
 # make a copy of the newest file for easy reference naming
 newfile=$(ls -ltr /home/ec2-user/$pathvar | tail -1 | awk '{print $9}')
 rm -f /mnt/ftp/httpd/customers/fccc/newest.data
-cp /home/ec2-user/$newfile /mnt/ftp/httpd/customers/fccc/newest.data
+cp /home/ec2-user/$pathvar$newfile /mnt/ftp/httpd/customers/fccc/newest.data
 
 
 
