@@ -9,20 +9,21 @@ da=$(date +%d)
 pathvar=$yr/$mo/$da/
 filenamevar=qnodes.out.${yr}_${mo}_${da}
 
-mkdir -p $pathvar
-mv $filenamevar* $pathvar/
+mkdir -p /home/ec2-user/$pathvar
+mv /home/ec2-user/$filenamevar* /home/ec2-user/$pathvar/.
 
 
 
 # copy new files from /home/ec2-user/qnodes.out.*
-cp -u -p /home/ec2-user/qnodes.out.* /mnt/ftp/httpd/customers/fccc/.
+#cp -u -p /home/ec2-user/qnodes.out.* /mnt/ftp/httpd/customers/fccc/
+
 
 
 
 # make a copy of the newest file for easy reference naming
-newest=$(ls -la | tail -1 | awk '{print $9}')
-rm -f newest.data
-cp $newest newest.data
+newfile=$(ls -ltr /home/ec2-user/$pathvar | tail -1 | awk '{print $9}')
+rm -f /mnt/ftp/httpd/customers/fccc/newest.data
+cp /home/ec2-user/$newfile /mnt/ftp/httpd/customers/fccc/newest.data
 
 
 
@@ -30,6 +31,7 @@ cp $newest newest.data
 #git --git-dir=/mnt/ftp/httpd/customers/fccc/.git --work-tree=/ add -A
 #git --git-dir=/mnt/ftp/httpd/customers/fccc/.git --work-tree=/ commit -am "Adding file"
 
+cd /mnt/ftp/httpd/customers/fccc
 git add -A
 git commit -am "automated file upload"
 git push origin master
