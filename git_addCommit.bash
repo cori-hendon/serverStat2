@@ -1,5 +1,5 @@
 #!/bin/bash
-# this should run once ever 10 mins 
+# this should run once every 10 mins 
 
 
 # move old stuff to directories for storage
