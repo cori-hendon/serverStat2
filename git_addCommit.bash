@@ -25,6 +25,10 @@ newfile=$(ls -ltr /home/ec2-user/$pathvar | tail -1 | awk '{print $9}')
 rm -f /mnt/ftp/httpd/customers/fccc/newest.data
 cp /home/ec2-user/$pathvar/$newfile /mnt/ftp/httpd/customers/fccc/newest.data
 
+# parse the newest file
+rm newest_parsed.data
+python parseQnodes.py newest.data > newest_parsed.data
+
 
 
 # update github directory
