@@ -36,7 +36,12 @@ for line in myfile:
 			#prop=linedata[2]
 			# the qnodes property for FCCC cluster gives high mem vs reg mem info
 			# use this to categorize cluster nodes into two sections
-			ntype=linedata[2]
+			if linedata[2]=="64GB":
+				ntype="Standard Mem: " + linedata[2]
+			elif linedata[2]=="128GB":
+				ntype="High Mem: " + linedata[2]
+			else:
+				ntype=linedata[2]
 		#elif linedata[0] == "ntype":
 		#	ntype=linedata[2]
 		else:
