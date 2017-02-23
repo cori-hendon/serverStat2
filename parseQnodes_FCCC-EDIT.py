@@ -23,7 +23,7 @@ for line in myfile:
 		if len(linedata) == 1:
 			# this is a new node
 			mystr=ntype + "," + name + "," + state + "," + power_state + "," + np# + "," + prop
-			if mystr != ",,,,,":
+			if mystr != ",,,,":
 				print mystr
 			name=linedata[0]	
 		elif linedata[0] == "state":
