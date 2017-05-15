@@ -17,6 +17,10 @@ np=""
 prop=""
 ntype=""
 dummy=""
+
+sendNotification=False
+notificationText=[]
+
 for line in myfile:
 	if line != "\n":
 		linedata=line.split()
@@ -25,7 +29,26 @@ for line in myfile:
 			mystr=ntype + "," + name + "," + state + "," + power_state + "," + np# + "," + prop
 			if mystr != ",,,,":
 				print mystr
-			name=linedata[0]	
+			name=linedata[0]
+			# -------------------------------------
+			# notification processing of bad states
+			# -------------------------------------
+			# send notification email if state is *
+                        # active
+                        # busy
+                        # down 		*
+                        # free
+                        # job-exclusive
+                        # job-sharing
+                        # offline 	*
+                        # reserve
+                        # state-unknown *
+                        # time-shared
+                        # up
+			if state == "down" or state == "offline" or state == "state-unknown":
+				sendNotification==True
+				notificationText.append(mystr)
+	
 		elif linedata[0] == "state":
 			state=linedata[2]
 		elif linedata[0] == "power_state":
@@ -47,3 +70,7 @@ for line in myfile:
 		else:
 			# dont include this data for now...
 			dummy="a"
+
+
+#if sendNotification:
+	
