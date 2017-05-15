@@ -5,7 +5,7 @@
 DIFF=$(diff lastAlert.txt newAlert.txt)
 if [ "$DIFF" != "" ]
 then
-	echo | mail -s "script subj" -q /mnt/ftp/httpd/customers/fccc/notifications/newAlert.txt chendon@dstonline.com
+	echo | mail -s "ServerStat: FCCC Node Down" -q /mnt/ftp/httpd/customers/fccc/notifications/newAlert.txt chendon@dstonline.com
 fi
 
 # replace lastAlert with newly updated data
