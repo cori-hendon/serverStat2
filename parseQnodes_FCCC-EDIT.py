@@ -47,7 +47,7 @@ for line in myfile:
                         # time-shared
                         # up
 			if state == "down" or state == "offline" or state == "state-unknown":
-				sendNotification==True
+				sendNotification=True
 				notificationText += mystr + "\n"
 	
 		elif linedata[0] == "state":
