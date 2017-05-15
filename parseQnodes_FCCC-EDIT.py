@@ -1,4 +1,5 @@
 import sys
+import subprocess
 
 # file name given as command line argument
 filename = sys.argv[1]
@@ -19,7 +20,7 @@ ntype=""
 dummy=""
 
 sendNotification=False
-notificationText=[]
+notificationText=""
 
 for line in myfile:
 	if line != "\n":
@@ -47,7 +48,7 @@ for line in myfile:
                         # up
 			if state == "down" or state == "offline" or state == "state-unknown":
 				sendNotification==True
-				notificationText.append(mystr)
+				notificationText += mystr + "\n"
 	
 		elif linedata[0] == "state":
 			state=linedata[2]
@@ -72,5 +73,11 @@ for line in myfile:
 			dummy="a"
 
 
-#if sendNotification:
-	
+if sendNotification:
+	notifyMsg = open("/mnt/ftp/httpd/customers/fccc/notifications/newAlert.txt","w")
+	notifyMsg.write("This is an automated notification from Data in Science Technologies.\nThe following FCCC nodes have trouble states:\n\n")
+	notifyMsg.write("Type,	name,	state,	power_state,	numProc\n")
+	notifyMsg.write("----------------------------------------------\n")
+	notifyMsg.write(mystr)
+	notifyMsg.close()
+	subprocess.Popen("./mnt/ftp/httpd/customers/fccc/notifications/sendAlert.sh",shell=True)
