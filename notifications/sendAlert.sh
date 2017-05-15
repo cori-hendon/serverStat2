@@ -7,3 +7,7 @@ if [ "$DIFF" != "" ]
 then
 	echo | mail -s "script subj" -q /mnt/ftp/httpd/customers/fccc/notifications/newAlert.txt chendon@dstonline.com
 fi
+
+# replace lastAlert with newly updated data
+cp newAlert.txt lastAlert.txt
+rm newAlert.txt
