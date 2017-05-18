@@ -46,14 +46,14 @@ for line in myfile:
                         # busy
                         # down 		*
                         # free
-                        # job-exclusive ****
+                        # job-exclusive 
                         # job-sharing
                         # offline 	*
                         # reserve
                         # state-unknown *
                         # time-shared
                         # up
-			if state == "down" or state == "offline" or state == "state-unknown" or state == "job-exclusive":
+			if state == "down" or state == "offline" or state == "state-unknown":
 				problemState=True
 				notificationText += mystr + "\n"
 				#debugFile.write(notificationText)
