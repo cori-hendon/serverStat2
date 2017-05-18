@@ -1,4 +1,6 @@
 import sys
+import os
+from shutil import copyfile
 import subprocess
 import smtplib
 from email.mime.text import MIMEText
@@ -87,19 +89,22 @@ else:
 
 
 if problemState:
+	os.remove("/mnt/ftp/httpd/customers/fccc/notifications/lastAlert.txt")
+	os.move("/mnt/ftp/httpd/customers/fccc/notifications/newAlert.txt","/mnt/ftp/httpd/customers/fccc/notifications/lastAlert.txt")
+	#os.remove("/mnt/ftp/httpd/customers/fccc/notifications/newAlert.txt")
 	# create the new notification email txt file
 	notifyMsg = open("/mnt/ftp/httpd/customers/fccc/notifications/newAlert.txt","a+")
 	notifyMsg.write("This is an automated notification from Data in Science Technologies.\nThe following FCCC nodes have trouble states:\n\n")
 	notifyMsg.write("Type,	name,	state,	power_state,	numProc\n")
 	notifyMsg.write("----------------------------------------------\n")
 	notifyMsg.write(notificationText)
-	notifyMsg.seek(0)
 	#notifyMsg.close()
 
 	# test if the new email txt contains different data from the lastAlert.txt
 	last=open("/mnt/ftp/httpd/customers/fccc/notifications/lastAlert.txt","r")
 	#curr=open("/mnt/ftp/httpd/customers/fccc/notifications/newAlert.txt","r")
 	last_txt=last.read()
+	notifyMsg.seek(0)
 	curr_txt=notifyMsg.read()
 
 	last.close()
