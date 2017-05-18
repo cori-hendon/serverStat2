@@ -44,14 +44,14 @@ for line in myfile:
                         # busy
                         # down 		*
                         # free
-                        # job-exclusive
+                        # job-exclusive ****
                         # job-sharing
                         # offline 	*
                         # reserve
                         # state-unknown *
                         # time-shared
                         # up
-			if state == "down" or state == "offline" or state == "state-unknown":
+			if state == "down" or state == "offline" or state == "state-unknown" or state == "job-exclusive":
 				problemState=True
 				notificationText += mystr + "\n"
 				#debugFile.write(notificationText)
@@ -108,6 +108,7 @@ if problemState:
 		mailTo = 'chendon@dstonline.com'
 		s = smtplib.SMTP('localhost')
 		s.sendmail('',mailTo,msg.as_string())
+		
 		s.quit()
 
 
