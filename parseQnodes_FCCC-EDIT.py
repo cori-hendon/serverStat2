@@ -83,8 +83,8 @@ if sendNotification:
 	notifyMsg.write("----------------------------------------------\n")
 	notifyMsg.write(notificationText)
 	notifyMsg.close()
-	bash = subprocess.Popen(["bash", "/mnt/ftp/httpd/customers/fccc/notifications/sendAlert.sh"])
-
+	proc = subprocess.Popen(["bash", "/mnt/ftp/httpd/customers/fccc/notifications/sendAlert.sh"])
+	proc.wait()
 
 
 #debugFile.close()
