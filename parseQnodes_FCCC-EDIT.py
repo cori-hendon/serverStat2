@@ -1,6 +1,6 @@
 import sys
 import subprocess
-import smptlib
+import smtplib
 from email.mime.text import MIMEText
 
 # file name given as command line argument
