@@ -22,7 +22,7 @@ dummy=""
 sendNotification=False
 notificationText=""
 
-debugFile = open("/mnt/ftp/httpd/customers/fccc/notifications/debug.txt","w")
+#debugFile = open("/mnt/ftp/httpd/customers/fccc/notifications/debug.txt","w")
 
 for line in myfile:
 	if line != "\n":
@@ -51,7 +51,7 @@ for line in myfile:
 			if state == "down" or state == "offline" or state == "state-unknown":
 				sendNotification=True
 				notificationText += mystr + "\n"
-				debugFile.write(notificationText)
+				#debugFile.write(notificationText)
 	
 		elif linedata[0] == "state":
 			state=linedata[2]
@@ -83,8 +83,8 @@ if sendNotification:
 	notifyMsg.write("----------------------------------------------\n")
 	notifyMsg.write(notificationText)
 	notifyMsg.close()
-	subprocess.Popen(["bash", "/mnt/ftp/httpd/customers/fccc/notifications/sendAlert.sh"])
+	bash = subprocess.Popen(["bash", "/mnt/ftp/httpd/customers/fccc/notifications/sendAlert.sh"])
 
 
 
-debugFile.close()
+#debugFile.close()
