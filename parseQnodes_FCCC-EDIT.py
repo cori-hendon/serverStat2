@@ -79,6 +79,13 @@ for line in myfile:
 			dummy="a"
 
 
+debugFile.write("problemState: ")
+if problemState:
+	debugFile.write("T\n")
+else:
+	debugFile.write("F\n")
+
+
 if problemState:
 	# create the new notification email txt file
 	notifyMsg = open("/mnt/ftp/httpd/customers/fccc/notifications/newAlert.txt","w")
@@ -96,6 +103,18 @@ if problemState:
 	if last_txt != curr_txt:
 		# this is a change in state
 		sendNotification=True
+
+
+
+	debugFile.write("sendNotification: ")
+	if sendNotification:
+		debugFile.write("T\n")
+	else:
+		debugFile.write("F\n")
+
+
+
+
 
 	# send the new file as an email message
 	if sendNotification:
