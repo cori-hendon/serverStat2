@@ -1,5 +1,6 @@
 import sys
 import subprocess
+import time
 
 # file name given as command line argument
 filename = sys.argv[1]
@@ -84,7 +85,7 @@ if sendNotification:
 	notifyMsg.write(notificationText)
 	notifyMsg.close()
 	proc = subprocess.Popen(["bash", "/mnt/ftp/httpd/customers/fccc/notifications/sendAlert.sh"])
-	proc.wait()
+	time.sleep(5)
 
 
 #debugFile.close()
