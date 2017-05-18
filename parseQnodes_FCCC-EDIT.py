@@ -25,7 +25,7 @@ problemState=False
 sendNotification=False
 notificationText=""
 
-#debugFile = open("/mnt/ftp/httpd/customers/fccc/notifications/debug.txt","w")
+debugFile = open("/mnt/ftp/httpd/customers/fccc/notifications/debug.txt","w")
 
 for line in myfile:
 	if line != "\n":
@@ -108,8 +108,9 @@ if problemState:
 		mailTo = 'chendon@dstonline.com'
 		s = smtplib.SMTP('localhost')
 		s.sendmail('',mailTo,msg.as_string())
-		
 		s.quit()
 
+		debugFile.write("got to end of conditionals...")
 
-#debugFile.close()
+
+debugFile.close()
