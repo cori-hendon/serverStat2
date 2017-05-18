@@ -88,18 +88,23 @@ else:
 
 if problemState:
 	# create the new notification email txt file
-	notifyMsg = open("/mnt/ftp/httpd/customers/fccc/notifications/newAlert.txt","w")
+	notifyMsg = open("/mnt/ftp/httpd/customers/fccc/notifications/newAlert.txt","a+")
 	notifyMsg.write("This is an automated notification from Data in Science Technologies.\nThe following FCCC nodes have trouble states:\n\n")
 	notifyMsg.write("Type,	name,	state,	power_state,	numProc\n")
 	notifyMsg.write("----------------------------------------------\n")
 	notifyMsg.write(notificationText)
-	notifyMsg.close()
+	notifyMsg.seek(0)
+	#notifyMsg.close()
 
 	# test if the new email txt contains different data from the lastAlert.txt
 	last=open("/mnt/ftp/httpd/customers/fccc/notifications/lastAlert.txt","r")
-	curr=open("/mnt/ftp/httpd/customers/fccc/notifications/newAlert.txt","r")
+	#curr=open("/mnt/ftp/httpd/customers/fccc/notifications/newAlert.txt","r")
 	last_txt=last.read()
-	curr_txt=curr.read()
+	curr_txt=notifyMsg.read()
+
+	last.close()
+	notifyMsg.close()
+
 	if last_txt != curr_txt:
 		# this is a change in state
 		sendNotification=True
@@ -118,9 +123,10 @@ if problemState:
 
 	# send the new file as an email message
 	if sendNotification:
-		fp = open('newAlert.txt','rb')
-		msg = MIMEText(fp.read())
-		fp.close()
+		#fp = open('newAlert.txt','rb')
+		#msg = MIMEText(fp.read())
+		#fp.close()
+		msg = MIMEText(curr_txt)
 
 		msg['Subject'] = 'FCCC-AutoNotify'
 		msg['From'] = ''
