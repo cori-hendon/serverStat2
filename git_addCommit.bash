@@ -26,7 +26,7 @@ rm -f /mnt/ftp/httpd/customers/fccc/newest.data
 cp /home/ec2-user/$pathvar/$newfile /mnt/ftp/httpd/customers/fccc/newest.data
 
 # parse the newest file
-rm newest_parsed.data
+rm /mnt/ftp/httpd/customers/fccc/newest_parsed.data
 python /mnt/ftp/httpd/customers/fccc/parseQnodes_FCCC-EDIT.py /mnt/ftp/httpd/customers/fccc/newest.data > /mnt/ftp/httpd/customers/fccc/newest_parsed.data
 
 
