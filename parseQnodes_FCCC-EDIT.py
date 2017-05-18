@@ -22,6 +22,8 @@ dummy=""
 sendNotification=False
 notificationText=""
 
+debugFile = open("/mnt/ftp/httpd/customers/fccc/notifications/debug.txt","w")
+
 for line in myfile:
 	if line != "\n":
 		linedata=line.split()
@@ -49,6 +51,7 @@ for line in myfile:
 			if state == "down" or state == "offline" or state == "state-unknown":
 				sendNotification=True
 				notificationText += mystr + "\n"
+				debugFile.write(notificationText)
 	
 		elif linedata[0] == "state":
 			state=linedata[2]
@@ -78,10 +81,10 @@ if sendNotification:
 	notifyMsg.write("This is an automated notification from Data in Science Technologies.\nThe following FCCC nodes have trouble states:\n\n")
 	notifyMsg.write("Type,	name,	state,	power_state,	numProc\n")
 	notifyMsg.write("----------------------------------------------\n")
-	notifyMsg.write(mystr)
+	notifyMsg.write(notificationText)
 	notifyMsg.close()
 	subprocess.Popen(["bash", "./mnt/ftp/httpd/customers/fccc/notifications/sendAlert.sh"])
 
 
 
-
+debugFile.close()
