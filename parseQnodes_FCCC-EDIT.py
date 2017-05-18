@@ -21,6 +21,7 @@ prop=""
 ntype=""
 dummy=""
 
+problemState=False
 sendNotification=False
 notificationText=""
 
@@ -51,7 +52,7 @@ for line in myfile:
                         # time-shared
                         # up
 			if state == "down" or state == "offline" or state == "state-unknown":
-				sendNotification=True
+				problemState=True
 				notificationText += mystr + "\n"
 				#debugFile.write(notificationText)
 	
@@ -78,7 +79,7 @@ for line in myfile:
 			dummy="a"
 
 
-if sendNotification:
+if problemState:
 	# create the new notification email txt file
 	notifyMsg = open("/mnt/ftp/httpd/customers/fccc/notifications/newAlert.txt","w")
 	notifyMsg.write("This is an automated notification from Data in Science Technologies.\nThe following FCCC nodes have trouble states:\n\n")
@@ -86,20 +87,28 @@ if sendNotification:
 	notifyMsg.write("----------------------------------------------\n")
 	notifyMsg.write(notificationText)
 	notifyMsg.close()
-	#proc = subprocess.Popen(["bash", "/mnt/ftp/httpd/customers/fccc/notifications/sendAlert.sh"])
-	#pout, perr = proc.communicate()
+
+	# test if the new email txt contains different data from the lastAlert.txt
+	last=open("/mnt/ftp/httpd/customers/fccc/notifications/lastAlert.txt","r")
+	curr=open("/mnt/ftp/httpd/customers/fccc/notifications/newAlert.txt","r")
+	last_txt=last.read()
+	curr_txt=curr.read()
+	if last_txt != curr_txt:
+		# this is a change in state
+		sendNotification=True
 
 	# send the new file as an email message
-	fp = open('newAlert.txt','rb')
-	msg = MIMEText(fp.read())
-	fp.close()
+	if sendNotification:
+		fp = open('newAlert.txt','rb')
+		msg = MIMEText(fp.read())
+		fp.close()
 
-	msg['Subject'] = 'FCCC-AutoNotify'
-	msg['From'] = ''
-	mailTo = 'chendon@dstonline.com'
-	s = smtplib.SMTP('localhost')
-	s.sendmail('',mailTo,msg.as_string())
-	s.quit()
+		msg['Subject'] = 'FCCC-AutoNotify'
+		msg['From'] = ''
+		mailTo = 'chendon@dstonline.com'
+		s = smtplib.SMTP('localhost')
+		s.sendmail('',mailTo,msg.as_string())
+		s.quit()
 
 
 #debugFile.close()
