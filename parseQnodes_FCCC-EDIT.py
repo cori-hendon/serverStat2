@@ -1,6 +1,7 @@
 import sys
 import subprocess
-import time
+import smptlib
+from email.mime.text import MIMEText
 
 # file name given as command line argument
 filename = sys.argv[1]
@@ -78,14 +79,27 @@ for line in myfile:
 
 
 if sendNotification:
+	# create the new notification email txt file
 	notifyMsg = open("/mnt/ftp/httpd/customers/fccc/notifications/newAlert.txt","w")
 	notifyMsg.write("This is an automated notification from Data in Science Technologies.\nThe following FCCC nodes have trouble states:\n\n")
 	notifyMsg.write("Type,	name,	state,	power_state,	numProc\n")
 	notifyMsg.write("----------------------------------------------\n")
 	notifyMsg.write(notificationText)
 	notifyMsg.close()
-	proc = subprocess.Popen(["bash", "/mnt/ftp/httpd/customers/fccc/notifications/sendAlert.sh"])
-	pout, perr = proc.communicate()
+	#proc = subprocess.Popen(["bash", "/mnt/ftp/httpd/customers/fccc/notifications/sendAlert.sh"])
+	#pout, perr = proc.communicate()
+
+	# send the new file as an email message
+	fp = open('newAlert.txt','rb')
+	msg = MIMEText(fp.read())
+	fp.close()
+
+	msg['Subject'] = 'FCCC-AutoNotify'
+	msg['From'] = ''
+	mailTo = 'chendon@dstonline.com'
+	s = smtplib.SMTP('localhost')
+	s.sendmail('',mailTo,msg.as_string())
+	s.quit()
 
 
 #debugFile.close()
