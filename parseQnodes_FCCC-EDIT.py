@@ -89,32 +89,30 @@ else:
 
 
 if problemState:
+	# from last run we need to update the current state to avoid sending notifications every 10 mins
 	os.remove("/mnt/ftp/httpd/customers/fccc/notifications/lastAlert.txt")
-	os.move("/mnt/ftp/httpd/customers/fccc/notifications/newAlert.txt","/mnt/ftp/httpd/customers/fccc/notifications/lastAlert.txt")
-	#os.remove("/mnt/ftp/httpd/customers/fccc/notifications/newAlert.txt")
+	os.rename("/mnt/ftp/httpd/customers/fccc/notifications/newAlert.txt","/mnt/ftp/httpd/customers/fccc/notifications/lastAlert.txt")
+
 	# create the new notification email txt file
 	notifyMsg = open("/mnt/ftp/httpd/customers/fccc/notifications/newAlert.txt","a+")
 	notifyMsg.write("This is an automated notification from Data in Science Technologies.\nThe following FCCC nodes have trouble states:\n\n")
 	notifyMsg.write("Type,	name,	state,	power_state,	numProc\n")
 	notifyMsg.write("----------------------------------------------\n")
 	notifyMsg.write(notificationText)
-	#notifyMsg.close()
 
 	# test if the new email txt contains different data from the lastAlert.txt
 	last=open("/mnt/ftp/httpd/customers/fccc/notifications/lastAlert.txt","r")
-	#curr=open("/mnt/ftp/httpd/customers/fccc/notifications/newAlert.txt","r")
 	last_txt=last.read()
 	notifyMsg.seek(0)
 	curr_txt=notifyMsg.read()
 
+	# close the two alert.txt files
 	last.close()
 	notifyMsg.close()
 
+	# decide if we need to send a notification email
 	if last_txt != curr_txt:
-		# this is a change in state
 		sendNotification=True
-
-
 
 	debugFile.write("sendNotification: ")
 	if sendNotification:
@@ -128,11 +126,7 @@ if problemState:
 
 	# send the new file as an email message
 	if sendNotification:
-		#fp = open('newAlert.txt','rb')
-		#msg = MIMEText(fp.read())
-		#fp.close()
 		msg = MIMEText(curr_txt)
-
 		msg['Subject'] = 'FCCC-AutoNotify'
 		msg['From'] = ''
 		mailTo = 'chendon@dstonline.com'
