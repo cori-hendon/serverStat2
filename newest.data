@@ -4,7 +4,7 @@ tshpcnodeprd001
      np = 16
      properties = 64GB
      ntype = cluster
-     status = rectime=1495866577,macaddr=e4:1d:2d:22:1a:90,cpuclock=Fixed,varattr=,jobs=,state=free,netload=435492733992,gres=,loadave=0.00,ncpus=16,physmem=65477184kb,availmem=80327776kb,totmem=82254396kb,idletime=4277897,nusers=1,nsessions=1,sessions=7790,uname=Linux tshpcnodeprd001 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
+     status = rectime=1495867162,macaddr=e4:1d:2d:22:1a:90,cpuclock=Fixed,varattr=,jobs=,state=free,netload=435493856476,gres=,loadave=0.05,ncpus=16,physmem=65477184kb,availmem=80328072kb,totmem=82254396kb,idletime=4278482,nusers=1,nsessions=1,sessions=7790,uname=Linux tshpcnodeprd001 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
      mom_service_port = 15002
      mom_manager_port = 15003
 
@@ -14,7 +14,7 @@ tshpcnodeprd002
      np = 16
      properties = 64GB
      ntype = cluster
-     status = rectime=1495866585,macaddr=e4:1d:2d:22:0f:30,cpuclock=Fixed,varattr=,jobs=,state=free,netload=747197241878,gres=,loadave=0.06,ncpus=16,physmem=65477184kb,availmem=80309460kb,totmem=82254396kb,idletime=5389562,nusers=1,nsessions=1,sessions=7281,uname=Linux tshpcnodeprd002 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
+     status = rectime=1495867170,macaddr=e4:1d:2d:22:0f:30,cpuclock=Fixed,varattr=,jobs=,state=free,netload=747198302568,gres=,loadave=0.00,ncpus=16,physmem=65477184kb,availmem=80309156kb,totmem=82254396kb,idletime=5390147,nusers=1,nsessions=1,sessions=7281,uname=Linux tshpcnodeprd002 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
      mom_service_port = 15002
      mom_manager_port = 15003
 
@@ -25,7 +25,7 @@ tshpcnodeprd003
      properties = 128GB
      ntype = cluster
      jobs = 0-15/267134.tshpcmgtprd01
-     status = rectime=1495866585,macaddr=e4:1d:2d:22:10:30,cpuclock=Fixed,varattr=,jobs=267134.tshpcmgtprd01(,session_id=6705),state=free,netload=4458904603176,gres=,loadave=0.25,ncpus=16,physmem=131668492kb,availmem=146027672kb,totmem=148445704kb,idletime=5389574,nusers=1,nsessions=1,sessions=6180,uname=Linux tshpcnodeprd003 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
+     status = rectime=1495867170,macaddr=e4:1d:2d:22:10:30,cpuclock=Fixed,varattr=,jobs=267134.tshpcmgtprd01(cput=565,energy_used=0,mem=6032kb,vmem=243416kb,walltime=568,session_id=6705),state=free,netload=4470931363366,gres=,loadave=0.95,ncpus=16,physmem=131668492kb,availmem=146019488kb,totmem=148445704kb,idletime=5390159,nusers=2,nsessions=2,sessions=6180 6705,uname=Linux tshpcnodeprd003 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
      mom_service_port = 15002
      mom_manager_port = 15003
 
@@ -36,7 +36,7 @@ tshpcnodeprd004
      properties = 128GB
      ntype = cluster
      jobs = 0-15/267131.tshpcmgtprd01
-     status = rectime=1495866576,macaddr=e4:1d:2d:22:0f:20,cpuclock=Fixed,varattr=,jobs=267131.tshpcmgtprd01(cput=1339,energy_used=0,mem=6048kb,vmem=243416kb,walltime=1346,session_id=4461),state=free,netload=4495859768070,gres=,loadave=1.00,ncpus=16,physmem=131668492kb,availmem=146081148kb,totmem=148445704kb,idletime=5389552,nusers=2,nsessions=2,sessions=4461 7218,uname=Linux tshpcnodeprd004 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
+     status = rectime=1495867161,macaddr=e4:1d:2d:22:0f:20,cpuclock=Fixed,varattr=,jobs=267131.tshpcmgtprd01(cput=1923,energy_used=0,mem=6052kb,vmem=243416kb,walltime=1931,session_id=4461),state=free,netload=4507639892310,gres=,loadave=0.99,ncpus=16,physmem=131668492kb,availmem=146074468kb,totmem=148445704kb,idletime=5390137,nusers=2,nsessions=2,sessions=4461 7218,uname=Linux tshpcnodeprd004 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
      mom_service_port = 15002
      mom_manager_port = 15003
 
@@ -46,7 +46,7 @@ tshpcnodeprd005
      np = 16
      properties = 64GB
      ntype = cluster
-     status = rectime=1495866600,macaddr=e4:1d:2d:22:10:80,cpuclock=Fixed,varattr=,jobs=,state=free,netload=958253619300,gres=,loadave=0.00,ncpus=16,physmem=65477184kb,availmem=80165212kb,totmem=82254396kb,idletime=5389604,nusers=1,nsessions=1,sessions=6274,uname=Linux tshpcnodeprd005 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
+     status = rectime=1495867185,macaddr=e4:1d:2d:22:10:80,cpuclock=Fixed,varattr=,jobs=,state=free,netload=958254775968,gres=,loadave=0.04,ncpus=16,physmem=65477184kb,availmem=80166200kb,totmem=82254396kb,idletime=5390189,nusers=1,nsessions=1,sessions=6274,uname=Linux tshpcnodeprd005 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
      mom_service_port = 15002
      mom_manager_port = 15003
 
@@ -56,7 +56,7 @@ tshpcnodeprd006
      np = 16
      properties = 64GB
      ntype = cluster
-     status = rectime=1495866584,macaddr=e4:1d:2d:22:0f:40,cpuclock=Fixed,varattr=,jobs=,state=free,netload=1113101405546,gres=,loadave=0.00,ncpus=16,physmem=65477184kb,availmem=80143672kb,totmem=82254396kb,idletime=5389564,nusers=1,nsessions=1,sessions=7256,uname=Linux tshpcnodeprd006 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
+     status = rectime=1495867169,macaddr=e4:1d:2d:22:0f:40,cpuclock=Fixed,varattr=,jobs=,state=free,netload=1113102463440,gres=,loadave=0.00,ncpus=16,physmem=65477184kb,availmem=80142848kb,totmem=82254396kb,idletime=5390149,nusers=1,nsessions=1,sessions=7256,uname=Linux tshpcnodeprd006 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
      mom_service_port = 15002
      mom_manager_port = 15003
 
@@ -66,7 +66,7 @@ tshpcnodeprd007
      np = 16
      properties = 64GB
      ntype = cluster
-     status = rectime=1495866580,macaddr=e4:1d:2d:22:1a:70,cpuclock=Fixed,varattr=,jobs=,state=free,netload=1081366232656,gres=,loadave=0.00,ncpus=16,physmem=65477184kb,availmem=80122484kb,totmem=82254396kb,idletime=5389540,nusers=1,nsessions=1,sessions=7248,uname=Linux tshpcnodeprd007 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
+     status = rectime=1495867165,macaddr=e4:1d:2d:22:1a:70,cpuclock=Fixed,varattr=,jobs=,state=free,netload=1081367273574,gres=,loadave=0.00,ncpus=16,physmem=65477184kb,availmem=80123440kb,totmem=82254396kb,idletime=5390125,nusers=1,nsessions=1,sessions=7248,uname=Linux tshpcnodeprd007 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
      mom_service_port = 15002
      mom_manager_port = 15003
 
@@ -76,7 +76,7 @@ tshpcnodeprd008
      np = 16
      properties = 64GB
      ntype = cluster
-     status = rectime=1495866570,macaddr=e4:1d:2d:22:0f:90,cpuclock=Fixed,varattr=,jobs=,state=free,netload=341042572197768,gres=,loadave=0.02,ncpus=16,physmem=65477184kb,availmem=80086456kb,totmem=82254396kb,idletime=5389553,nusers=1,nsessions=1,sessions=7269,uname=Linux tshpcnodeprd008 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
+     status = rectime=1495867200,macaddr=e4:1d:2d:22:0f:90,cpuclock=Fixed,varattr=,jobs=,state=free,netload=341042573285328,gres=,loadave=0.00,ncpus=16,physmem=65477184kb,availmem=80085728kb,totmem=82254396kb,idletime=5390183,nusers=1,nsessions=1,sessions=7269,uname=Linux tshpcnodeprd008 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
      mom_service_port = 15002
      mom_manager_port = 15003
 
@@ -86,7 +86,7 @@ tshpcnodeprd009
      np = 16
      properties = 64GB
      ntype = cluster
-     status = rectime=1495866584,macaddr=e4:1d:2d:22:10:20,cpuclock=Fixed,varattr=,jobs=,state=free,netload=351725208220678,gres=,loadave=0.08,ncpus=16,physmem=65477184kb,availmem=80071704kb,totmem=82254396kb,idletime=5389592,nusers=1,nsessions=1,sessions=6094,uname=Linux tshpcnodeprd009 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
+     status = rectime=1495867169,macaddr=e4:1d:2d:22:10:20,cpuclock=Fixed,varattr=,jobs=,state=free,netload=351725209339786,gres=,loadave=0.00,ncpus=16,physmem=65477184kb,availmem=80070512kb,totmem=82254396kb,idletime=5390177,nusers=1,nsessions=1,sessions=6094,uname=Linux tshpcnodeprd009 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
      mom_service_port = 15002
      mom_manager_port = 15003
 
@@ -96,7 +96,7 @@ tshpcnodeprd010
      np = 16
      properties = 64GB
      ntype = cluster
-     status = rectime=1495866563,macaddr=e4:1d:2d:22:19:f0,cpuclock=Fixed,varattr=,jobs=,state=free,netload=352052244603764,gres=,loadave=0.00,ncpus=16,physmem=65477184kb,availmem=79784024kb,totmem=82254396kb,idletime=5389172,nusers=1,nsessions=1,sessions=6265,uname=Linux tshpcnodeprd010 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
+     status = rectime=1495867193,macaddr=e4:1d:2d:22:19:f0,cpuclock=Fixed,varattr=,jobs=,state=free,netload=352052245755084,gres=,loadave=0.07,ncpus=16,physmem=65477184kb,availmem=79783236kb,totmem=82254396kb,idletime=5389802,nusers=1,nsessions=1,sessions=6265,uname=Linux tshpcnodeprd010 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
      mom_service_port = 15002
      mom_manager_port = 15003
 
@@ -106,7 +106,7 @@ tshpcnodeprd011
      np = 16
      properties = 64GB
      ntype = cluster
-     status = rectime=1495866594,macaddr=e4:1d:2d:22:1a:30,cpuclock=Fixed,varattr=,jobs=,state=free,netload=342365377648244,gres=,loadave=0.00,ncpus=16,physmem=65477184kb,availmem=80135900kb,totmem=82254396kb,idletime=5389560,nusers=1,nsessions=1,sessions=7211,uname=Linux tshpcnodeprd011 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
+     status = rectime=1495867179,macaddr=e4:1d:2d:22:1a:30,cpuclock=Fixed,varattr=,jobs=,state=free,netload=342365378747158,gres=,loadave=0.00,ncpus=16,physmem=65477184kb,availmem=80134036kb,totmem=82254396kb,idletime=5390145,nusers=1,nsessions=1,sessions=7211,uname=Linux tshpcnodeprd011 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
      mom_service_port = 15002
      mom_manager_port = 15003
 
@@ -116,7 +116,7 @@ tshpcnodeprd012
      np = 16
      properties = 64GB
      ntype = cluster
-     status = rectime=1495866596,macaddr=e4:1d:2d:2c:f5:a0,cpuclock=Fixed,varattr=,jobs=,state=free,netload=326541284585342,gres=,loadave=0.00,ncpus=16,physmem=65477184kb,availmem=80283336kb,totmem=82254396kb,idletime=5389591,nusers=1,nsessions=1,sessions=6246,uname=Linux tshpcnodeprd012 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
+     status = rectime=1495867181,macaddr=e4:1d:2d:2c:f5:a0,cpuclock=Fixed,varattr=,jobs=,state=free,netload=326541285714188,gres=,loadave=0.02,ncpus=16,physmem=65477184kb,availmem=80282976kb,totmem=82254396kb,idletime=5390176,nusers=1,nsessions=1,sessions=6246,uname=Linux tshpcnodeprd012 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
      mom_service_port = 15002
      mom_manager_port = 15003
 
@@ -126,7 +126,7 @@ tshpcnodeprd014
      np = 16
      properties = 64GB
      ntype = cluster
-     status = rectime=1495866599,macaddr=e4:1d:2d:22:1a:50,cpuclock=Fixed,varattr=,jobs=,state=free,netload=335304120499774,gres=,loadave=0.01,ncpus=16,physmem=65477184kb,availmem=80352144kb,totmem=82254396kb,idletime=5389666,nusers=1,nsessions=1,sessions=6111,uname=Linux tshpcnodeprd014 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
+     status = rectime=1495867184,macaddr=e4:1d:2d:22:1a:50,cpuclock=Fixed,varattr=,jobs=,state=free,netload=335304121540346,gres=,loadave=0.03,ncpus=16,physmem=65477184kb,availmem=80352720kb,totmem=82254396kb,idletime=5390251,nusers=1,nsessions=1,sessions=6111,uname=Linux tshpcnodeprd014 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
      mom_service_port = 15002
      mom_manager_port = 15003
 
@@ -136,7 +136,7 @@ tshpcnodeprd015
      np = 16
      properties = 64GB
      ntype = cluster
-     status = rectime=1495866582,macaddr=e4:1d:2d:22:13:90,cpuclock=Fixed,varattr=,jobs=,state=free,netload=339736901757836,gres=,loadave=0.00,ncpus=16,physmem=65477184kb,availmem=80108992kb,totmem=82254396kb,idletime=5389544,nusers=1,nsessions=1,sessions=7322,uname=Linux tshpcnodeprd015 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
+     status = rectime=1495867167,macaddr=e4:1d:2d:22:13:90,cpuclock=Fixed,varattr=,jobs=,state=free,netload=339736902863794,gres=,loadave=0.00,ncpus=16,physmem=65477184kb,availmem=80109648kb,totmem=82254396kb,idletime=5390129,nusers=1,nsessions=1,sessions=7322,uname=Linux tshpcnodeprd015 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
      mom_service_port = 15002
      mom_manager_port = 15003
 
@@ -147,18 +147,17 @@ tshpcnodeprd016
      properties = 128GB
      ntype = cluster
      jobs = 0-15/267127.tshpcmgtprd01
-     status = rectime=1495866564,macaddr=e4:1d:2d:2c:f5:b0,cpuclock=Fixed,varattr=,jobs=267127.tshpcmgtprd01(cput=14408,energy_used=0,mem=13516528kb,vmem=14834272kb,walltime=4192,session_id=3632),state=free,netload=4973607786632,gres=,loadave=3.17,ncpus=16,physmem=131668492kb,availmem=141464468kb,totmem=148445704kb,idletime=5389630,nusers=2,nsessions=2,sessions=3632 6119,uname=Linux tshpcnodeprd016 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
+     status = rectime=1495867194,macaddr=e4:1d:2d:2c:f5:b0,cpuclock=Fixed,varattr=,jobs=267127.tshpcmgtprd01(cput=22239,energy_used=0,mem=13516528kb,vmem=14834272kb,walltime=4822,session_id=3632),state=free,netload=4983611679392,gres=,loadave=2.76,ncpus=16,physmem=131668492kb,availmem=141393708kb,totmem=148445704kb,idletime=5390260,nusers=2,nsessions=2,sessions=3632 6119,uname=Linux tshpcnodeprd016 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
      mom_service_port = 15002
      mom_manager_port = 15003
 
 tshpcnodeprd017
-     state = job-exclusive
+     state = free
      power_state = Running
      np = 16
      properties = 128GB
      ntype = cluster
-     jobs = 0-15/267125.tshpcmgtprd01
-     status = rectime=1495866589,macaddr=e4:1d:2d:2c:f5:c0,cpuclock=Fixed,varattr=,jobs=267125.tshpcmgtprd01(cput=34512,energy_used=0,mem=13535292kb,vmem=36462848kb,walltime=6114,session_id=5892),state=free,netload=4929843052110,gres=,loadave=3.27,ncpus=16,physmem=131668492kb,availmem=142373716kb,totmem=148445704kb,idletime=5389651,nusers=2,nsessions=2,sessions=5892 6301,uname=Linux tshpcnodeprd017 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
+     status = rectime=1495867174,macaddr=e4:1d:2d:2c:f5:c0,cpuclock=Fixed,varattr=,jobs=,state=free,netload=4941183636422,gres=,loadave=0.01,ncpus=16,physmem=131668492kb,availmem=146223008kb,totmem=148445704kb,idletime=5390236,nusers=1,nsessions=1,sessions=6301,uname=Linux tshpcnodeprd017 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
      mom_service_port = 15002
      mom_manager_port = 15003
 
@@ -169,7 +168,7 @@ tshpcnodeprd018
      properties = 128GB
      ntype = cluster
      jobs = 0-15/267124.tshpcmgtprd01
-     status = rectime=1495866585,macaddr=e4:1d:2d:22:19:00,cpuclock=Fixed,varattr=,jobs=267124.tshpcmgtprd01(cput=28326,energy_used=0,mem=13627740kb,vmem=14939992kb,walltime=6269,session_id=6253),state=free,netload=5343975430584,gres=,loadave=0.89,ncpus=16,physmem=131668492kb,availmem=141557556kb,totmem=148445704kb,idletime=5389652,nusers=2,nsessions=2,sessions=6101 6253,uname=Linux tshpcnodeprd018 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
+     status = rectime=1495867170,macaddr=e4:1d:2d:22:19:00,cpuclock=Fixed,varattr=,jobs=267124.tshpcmgtprd01(cput=34222,energy_used=0,mem=13627740kb,vmem=14939992kb,walltime=6844,session_id=6253),state=free,netload=5353440742670,gres=,loadave=1.14,ncpus=16,physmem=131668492kb,availmem=143736372kb,totmem=148445704kb,idletime=5390237,nusers=2,nsessions=2,sessions=6101 6253,uname=Linux tshpcnodeprd018 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
      mom_service_port = 15002
      mom_manager_port = 15003
 
@@ -180,7 +179,7 @@ tshpcnodeprd020
      properties = 128GB
      ntype = cluster
      jobs = 0-15/267129.tshpcmgtprd01
-     status = rectime=1495866588,macaddr=e4:1d:2d:22:1b:c0,cpuclock=Fixed,varattr=,jobs=267129.tshpcmgtprd01(cput=3026,energy_used=0,mem=6040kb,vmem=243420kb,walltime=3035,session_id=25566),state=free,netload=4881078289166,gres=,loadave=0.89,ncpus=16,physmem=131668492kb,availmem=146040464kb,totmem=148445704kb,idletime=1340511,nusers=2,nsessions=2,sessions=6259 25566,uname=Linux tshpcnodeprd020 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
+     status = rectime=1495867173,macaddr=e4:1d:2d:22:1b:c0,cpuclock=Fixed,varattr=,jobs=267129.tshpcmgtprd01(cput=5719,energy_used=0,mem=17444840kb,vmem=18663700kb,walltime=3620,session_id=25566),state=free,netload=4950155197180,gres=,loadave=7.06,ncpus=16,physmem=131668492kb,availmem=128208524kb,totmem=148445704kb,idletime=1341096,nusers=2,nsessions=2,sessions=6259 25566,uname=Linux tshpcnodeprd020 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
      mom_service_port = 15002
      mom_manager_port = 15003
 
@@ -190,7 +189,7 @@ tshpcnodeprd024
      np = 16
      properties = 64GB
      ntype = cluster
-     status = rectime=1495866570,macaddr=e4:1d:2d:22:1b:a0,cpuclock=Fixed,varattr=,jobs=,state=free,netload=195560216381548,gres=,loadave=0.00,ncpus=16,physmem=65477184kb,availmem=80335608kb,totmem=82254396kb,idletime=5389636,nusers=1,nsessions=1,sessions=6119,uname=Linux tshpcnodeprd024 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
+     status = rectime=1495867200,macaddr=e4:1d:2d:22:1b:a0,cpuclock=Fixed,varattr=,jobs=,state=free,netload=195560217585472,gres=,loadave=0.00,ncpus=16,physmem=65477184kb,availmem=80332760kb,totmem=82254396kb,idletime=5390266,nusers=1,nsessions=1,sessions=6119,uname=Linux tshpcnodeprd024 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
      mom_service_port = 15002
      mom_manager_port = 15003
 
@@ -200,7 +199,7 @@ tshpcnodeprd025
      np = 16
      properties = 64GB
      ntype = cluster
-     status = rectime=1495866561,macaddr=e4:1d:2d:2c:f5:f0,cpuclock=Fixed,varattr=,jobs=,state=free,netload=201540645853424,gres=,loadave=0.00,ncpus=16,physmem=65477184kb,availmem=80331840kb,totmem=82254396kb,idletime=5389622,nusers=1,nsessions=1,sessions=6179,uname=Linux tshpcnodeprd025 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
+     status = rectime=1495867191,macaddr=e4:1d:2d:2c:f5:f0,cpuclock=Fixed,varattr=,jobs=,state=free,netload=201540647037596,gres=,loadave=0.00,ncpus=16,physmem=65477184kb,availmem=80331876kb,totmem=82254396kb,idletime=5390252,nusers=1,nsessions=1,sessions=6179,uname=Linux tshpcnodeprd025 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
      mom_service_port = 15002
      mom_manager_port = 15003
 
@@ -210,7 +209,7 @@ tshpcnodeprd026
      np = 16
      properties = 64GB
      ntype = cluster
-     status = rectime=1495866562,macaddr=e4:1d:2d:22:19:50,cpuclock=Fixed,varattr=,jobs=,state=free,netload=203066148560904,gres=,loadave=0.00,ncpus=16,physmem=65477184kb,availmem=80272332kb,totmem=82254396kb,idletime=5389626,nusers=1,nsessions=1,sessions=6162,uname=Linux tshpcnodeprd026 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
+     status = rectime=1495867193,macaddr=e4:1d:2d:22:19:50,cpuclock=Fixed,varattr=,jobs=,state=free,netload=203066149747660,gres=,loadave=0.02,ncpus=16,physmem=65477184kb,availmem=80272032kb,totmem=82254396kb,idletime=5390257,nusers=1,nsessions=1,sessions=6162,uname=Linux tshpcnodeprd026 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
      mom_service_port = 15002
      mom_manager_port = 15003
 
@@ -220,7 +219,7 @@ tshpcnodeprd027
      np = 16
      properties = 64GB
      ntype = cluster
-     status = rectime=1495866557,macaddr=e4:1d:2d:22:1b:80,cpuclock=Fixed,varattr=,jobs=,state=free,netload=339195009457574,gres=,loadave=0.00,ncpus=16,physmem=65477184kb,availmem=80297452kb,totmem=82254396kb,idletime=5389620,nusers=1,nsessions=1,sessions=6208,uname=Linux tshpcnodeprd027 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
+     status = rectime=1495867187,macaddr=e4:1d:2d:22:1b:80,cpuclock=Fixed,varattr=,jobs=,state=free,netload=339195010609210,gres=,loadave=0.00,ncpus=16,physmem=65477184kb,availmem=80297464kb,totmem=82254396kb,idletime=5390250,nusers=1,nsessions=1,sessions=6208,uname=Linux tshpcnodeprd027 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
      mom_service_port = 15002
      mom_manager_port = 15003
 
@@ -230,7 +229,7 @@ tshpcnodeprd029
      np = 16
      properties = 64GB
      ntype = cluster
-     status = rectime=1495866561,macaddr=e4:1d:2d:22:1c:40,cpuclock=Fixed,varattr=,jobs=,state=free,netload=198764054660168,gres=,loadave=0.00,ncpus=16,physmem=65477184kb,availmem=80280004kb,totmem=82254396kb,idletime=5389622,nusers=1,nsessions=1,sessions=6250,uname=Linux tshpcnodeprd029 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
+     status = rectime=1495867192,macaddr=e4:1d:2d:22:1c:40,cpuclock=Fixed,varattr=,jobs=,state=free,netload=198764055722946,gres=,loadave=0.00,ncpus=16,physmem=65477184kb,availmem=80279972kb,totmem=82254396kb,idletime=5390253,nusers=1,nsessions=1,sessions=6250,uname=Linux tshpcnodeprd029 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
      mom_service_port = 15002
      mom_manager_port = 15003
 
@@ -240,7 +239,7 @@ tshpcnodeprd030
      np = 16
      properties = 64GB
      ntype = cluster
-     status = rectime=1495866578,macaddr=e4:1d:2d:22:14:00,cpuclock=Fixed,varattr=,jobs=,state=free,netload=21301006144958,gres=,loadave=0.00,ncpus=16,physmem=65477184kb,availmem=80309688kb,totmem=82254396kb,idletime=6859530,nusers=1,nsessions=1,sessions=6246,uname=Linux tshpcnodeprd030 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
+     status = rectime=1495867163,macaddr=e4:1d:2d:22:14:00,cpuclock=Fixed,varattr=,jobs=,state=free,netload=21301007192824,gres=,loadave=0.00,ncpus=16,physmem=65477184kb,availmem=80307764kb,totmem=82254396kb,idletime=6860115,nusers=1,nsessions=1,sessions=6246,uname=Linux tshpcnodeprd030 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
      mom_service_port = 15002
      mom_manager_port = 15003
 
@@ -251,7 +250,7 @@ tshpcnodeprd013
      properties = 64GB
      ntype = cluster
      jobs = 0-15/267132.tshpcmgtprd01
-     status = rectime=1495866584,macaddr=e4:1d:2d:22:10:40,cpuclock=Fixed,varattr=,jobs=267132.tshpcmgtprd01(cput=1806,energy_used=0,mem=13330272kb,vmem=14623288kb,walltime=324,session_id=25636),state=free,netload=22488138427246,gres=,loadave=4.99,ncpus=16,physmem=65477184kb,availmem=63231824kb,totmem=82254396kb,idletime=5389551,nusers=2,nsessions=2,sessions=7277 25636,uname=Linux tshpcnodeprd013 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
+     status = rectime=1495867170,macaddr=e4:1d:2d:22:10:40,cpuclock=Fixed,varattr=,jobs=267132.tshpcmgtprd01(cput=5126,energy_used=0,mem=13330512kb,vmem=14623288kb,walltime=909,session_id=25636),state=free,netload=22529438130004,gres=,loadave=0.50,ncpus=16,physmem=65477184kb,availmem=75580764kb,totmem=82254396kb,idletime=5390137,nusers=2,nsessions=2,sessions=7277 25636,uname=Linux tshpcnodeprd013 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
      mom_service_port = 15002
      mom_manager_port = 15003
 
@@ -262,7 +261,7 @@ tshpcnodeprd019
      properties = 128GB
      ntype = cluster
      jobs = 0-15/267123.tshpcmgtprd01
-     status = rectime=1495866594,macaddr=e4:1d:2d:22:19:30,cpuclock=Fixed,varattr=,jobs=267123.tshpcmgtprd01(cput=15471,energy_used=0,mem=23443308kb,vmem=24748636kb,walltime=6320,session_id=7699),state=free,netload=5892257472604,gres=,loadave=2.14,ncpus=16,physmem=131668496kb,availmem=141579156kb,totmem=148445708kb,idletime=5389660,nusers=2,nsessions=2,sessions=6259 7699,uname=Linux tshpcnodeprd019 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
+     status = rectime=1495867179,macaddr=e4:1d:2d:22:19:30,cpuclock=Fixed,varattr=,jobs=267123.tshpcmgtprd01(cput=22698,energy_used=0,mem=23443308kb,vmem=24748636kb,walltime=6895,session_id=7699),state=free,netload=5901469169868,gres=,loadave=2.88,ncpus=16,physmem=131668496kb,availmem=141501016kb,totmem=148445708kb,idletime=5390245,nusers=2,nsessions=2,sessions=6259 7699,uname=Linux tshpcnodeprd019 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
      mom_service_port = 15002
      mom_manager_port = 15003
 
@@ -273,7 +272,7 @@ tshpcnodeprd022
      properties = 128GB
      ntype = cluster
      jobs = 0-15/267133.tshpcmgtprd01
-     status = rectime=1495866564,macaddr=e4:1d:2d:2c:f5:e0,cpuclock=Fixed,varattr=,jobs=267133.tshpcmgtprd01(cput=26,energy_used=0,mem=6024kb,vmem=243416kb,walltime=28,session_id=14598),state=free,netload=6856924800640,gres=,loadave=0.66,ncpus=16,physmem=131668492kb,availmem=146111056kb,totmem=148445704kb,idletime=5389618,nusers=2,nsessions=2,sessions=6205 14598,uname=Linux tshpcnodeprd022 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
+     status = rectime=1495867194,macaddr=e4:1d:2d:2c:f5:e0,cpuclock=Fixed,varattr=,jobs=267133.tshpcmgtprd01(cput=654,energy_used=0,mem=6024kb,vmem=243416kb,walltime=658,session_id=14598),state=free,netload=6869655057110,gres=,loadave=0.94,ncpus=16,physmem=131668492kb,availmem=146102076kb,totmem=148445704kb,idletime=5390248,nusers=2,nsessions=2,sessions=6205 14598,uname=Linux tshpcnodeprd022 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
      mom_service_port = 15002
      mom_manager_port = 15003
 
@@ -284,7 +283,7 @@ tshpcnodeprd023
      properties = 128GB
      ntype = cluster
      jobs = 0-15/267128.tshpcmgtprd01
-     status = rectime=1495866579,macaddr=e4:1d:2d:2c:f5:d0,cpuclock=Fixed,varattr=,jobs=267128.tshpcmgtprd01(cput=3081,energy_used=0,mem=6032kb,vmem=243412kb,walltime=3090,session_id=27118),state=free,netload=10267205977024,gres=,loadave=0.97,ncpus=16,physmem=131668496kb,availmem=146002616kb,totmem=148445708kb,idletime=478937,nusers=2,nsessions=2,sessions=6242 27118,uname=Linux tshpcnodeprd023 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
+     status = rectime=1495867164,macaddr=e4:1d:2d:2c:f5:d0,cpuclock=Fixed,varattr=,jobs=267128.tshpcmgtprd01(cput=4475,energy_used=0,mem=13408020kb,vmem=14635916kb,walltime=3675,session_id=27118),state=free,netload=10308600160418,gres=,loadave=5.06,ncpus=16,physmem=131668496kb,availmem=132762904kb,totmem=148445708kb,idletime=479522,nusers=2,nsessions=2,sessions=6242 27118,uname=Linux tshpcnodeprd023 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
      mom_service_port = 15002
      mom_manager_port = 15003
 
@@ -295,7 +294,7 @@ tshpcnodeprd028
      properties = 64GB
      ntype = cluster
      jobs = 0-15/267130.tshpcmgtprd01
-     status = rectime=1495866562,macaddr=e4:1d:2d:22:1b:b0,cpuclock=Fixed,varattr=,jobs=267130.tshpcmgtprd01(cput=12107,energy_used=0,mem=13310188kb,vmem=14626032kb,walltime=2202,session_id=26575),state=free,netload=15277864414976,gres=,loadave=0.42,ncpus=16,physmem=65477184kb,availmem=75665388kb,totmem=82254396kb,idletime=124320,nusers=2,nsessions=2,sessions=6253 26575,uname=Linux tshpcnodeprd028 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
+     status = rectime=1495867192,macaddr=e4:1d:2d:22:1b:b0,cpuclock=Fixed,varattr=,jobs=267130.tshpcmgtprd01(cput=15506,energy_used=0,mem=13310188kb,vmem=14626032kb,walltime=2832,session_id=26575),state=free,netload=15286668721012,gres=,loadave=0.43,ncpus=16,physmem=65477184kb,availmem=75667568kb,totmem=82254396kb,idletime=124950,nusers=2,nsessions=2,sessions=6253 26575,uname=Linux tshpcnodeprd028 2.6.32-504.16.2.el6.x86_64 #1 SMP Wed Apr 22 06:48:29 UTC 2015 x86_64,opsys=linux
      mom_service_port = 15002
      mom_manager_port = 15003
 
