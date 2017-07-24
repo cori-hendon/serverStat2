@@ -36,8 +36,8 @@ python /mnt/ftp/httpd/customers/fccc/parseQnodes_FCCC-EDIT.py /mnt/ftp/httpd/cus
 #git --git-dir=/mnt/ftp/httpd/customers/fccc/.git --work-tree=/ commit -am "Adding file"
 
 cd /mnt/ftp/httpd/customers/fccc
-git add -A
-git commit -am "automated file upload"
+git add -A &> /dev/null
+git commit -am "automated file upload" &> /dev/null
 git push origin master &> /dev/null
 
 # redirecting output to /dev/null to clean up mailbox clutter
