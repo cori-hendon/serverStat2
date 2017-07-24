@@ -38,4 +38,6 @@ python /mnt/ftp/httpd/customers/fccc/parseQnodes_FCCC-EDIT.py /mnt/ftp/httpd/cus
 cd /mnt/ftp/httpd/customers/fccc
 git add -A
 git commit -am "automated file upload"
-git push origin master --quiet
+git push origin master &> /dev/null
+
+# redirecting output to /dev/null to clean up mailbox clutter
