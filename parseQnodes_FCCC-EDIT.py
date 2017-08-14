@@ -27,7 +27,7 @@ problemState=False
 sendNotification=False
 notificationText=""
 
-debugFile = open("/mnt/ftp/httpd/customers/fccc/notifications/debug.txt","w")
+debugFile = open("/mnt/ftp/httpd/customers/fccc/serverStat/notifications/debug.txt","w")
 
 for line in myfile:
 	if line != "\n":
@@ -90,18 +90,18 @@ else:
 
 if problemState:
 	# from last run we need to update the current state to avoid sending notifications every 10 mins
-	os.remove("/mnt/ftp/httpd/customers/fccc/notifications/lastAlert.txt")
-	os.rename("/mnt/ftp/httpd/customers/fccc/notifications/newAlert.txt","/mnt/ftp/httpd/customers/fccc/notifications/lastAlert.txt")
+	os.remove("/mnt/ftp/httpd/customers/fccc/serverStat/notifications/lastAlert.txt")
+	os.rename("/mnt/ftp/httpd/customers/fccc/serverStat/notifications/newAlert.txt","/mnt/ftp/httpd/customers/fccc/serverStat/notifications/lastAlert.txt")
 
 	# create the new notification email txt file
-	notifyMsg = open("/mnt/ftp/httpd/customers/fccc/notifications/newAlert.txt","a+")
+	notifyMsg = open("/mnt/ftp/httpd/customers/fccc/serverStat/notifications/newAlert.txt","a+")
 	notifyMsg.write("This is an automated notification from Data in Science Technologies.\nThe following FCCC nodes have trouble states:\n\n")
 	notifyMsg.write("Type,	name,	state,	power_state,	numProc\n")
 	notifyMsg.write("----------------------------------------------\n")
 	notifyMsg.write(notificationText)
 
 	# test if the new email txt contains different data from the lastAlert.txt
-	last=open("/mnt/ftp/httpd/customers/fccc/notifications/lastAlert.txt","r")
+	last=open("/mnt/ftp/httpd/customers/fccc/serverStat/notifications/lastAlert.txt","r")
 	last_txt=last.read()
 	notifyMsg.seek(0)
 	curr_txt=notifyMsg.read()

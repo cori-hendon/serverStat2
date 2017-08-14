@@ -22,12 +22,12 @@ mv /home/ec2-user/$filenamevar* /home/ec2-user/$pathvar/.
 
 # make a copy of the newest file for easy reference naming
 newfile=$(ls -ltr /home/ec2-user/$pathvar | tail -1 | awk '{print $9}')
-rm -f /mnt/ftp/httpd/customers/fccc/newest.data
-cp /home/ec2-user/$pathvar/$newfile /mnt/ftp/httpd/customers/fccc/newest.data
+rm -f /mnt/ftp/httpd/customers/fccc/serverStat/newest.data
+cp /home/ec2-user/$pathvar/$newfile /mnt/ftp/httpd/customers/fccc/serverStat/newest.data
 
 # parse the newest file
-rm /mnt/ftp/httpd/customers/fccc/newest_parsed.data
-python /mnt/ftp/httpd/customers/fccc/parseQnodes_FCCC-EDIT.py /mnt/ftp/httpd/customers/fccc/newest.data > /mnt/ftp/httpd/customers/fccc/newest_parsed.data
+rm /mnt/ftp/httpd/customers/fccc/serverStat/newest_parsed.data
+python /mnt/ftp/httpd/customers/fccc/serverStat/parseQnodes_FCCC-EDIT.py /mnt/ftp/httpd/customers/fccc/serverStat/newest.data > /mnt/ftp/httpd/customers/fccc/serverStat/newest_parsed.data
 
 
 
@@ -35,7 +35,7 @@ python /mnt/ftp/httpd/customers/fccc/parseQnodes_FCCC-EDIT.py /mnt/ftp/httpd/cus
 #git --git-dir=/mnt/ftp/httpd/customers/fccc/.git --work-tree=/ add -A
 #git --git-dir=/mnt/ftp/httpd/customers/fccc/.git --work-tree=/ commit -am "Adding file"
 
-cd /mnt/ftp/httpd/customers/fccc
+cd /mnt/ftp/httpd/customers/fccc/serverStat/
 git add -A &> /dev/null
 git commit -am "automated file upload" &> /dev/null
 git push origin master &> /dev/null
